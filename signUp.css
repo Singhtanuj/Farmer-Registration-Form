@@ -169,6 +169,11 @@ form.sign-in-form {
   transition-delay: 0.4s;
 }
 
+.stateSelect{
+  transition: transform 1.1s ease-in-out;
+  transition-delay: 0.4s;
+}
+
 .panel {
   display: flex;
   flex-direction: column;
@@ -216,6 +221,7 @@ form.sign-in-form {
 }
 
 .right-panel .image,
+.right-panel .stateSelect,
 .right-panel .content {
   transform: translateX(800px);
 }
@@ -228,6 +234,7 @@ form.sign-in-form {
 }
 
 .container.sign-up-mode .left-panel .image,
+.container.sign-up-mode .left-panel .stateSelect,
 .container.sign-up-mode .left-panel .content {
   transform: translateX(-800px);
 }
@@ -247,6 +254,7 @@ form.sign-in-form {
 }
 
 .container.sign-up-mode .right-panel .image,
+.container.sign-up-mode .right-panel .stateSelect,
 .container.sign-up-mode .right-panel .content {
   transform: translateX(0%);
 }
@@ -342,16 +350,19 @@ form.sign-in-form {
   }
 
   .container.sign-up-mode .left-panel .image,
+  .container.sign-up-mode .left-panel .stateSelect,
   .container.sign-up-mode .left-panel .content {
     transform: translateY(-300px);
   }
 
   .container.sign-up-mode .right-panel .image,
+  .container.sign-up-mode .right-panel .stateSelect,
   .container.sign-up-mode .right-panel .content {
     transform: translateY(0px);
   }
 
   .right-panel .image,
+  .right-panel .stateSelect,
   .right-panel .content {
     transform: translateY(300px);
   }
