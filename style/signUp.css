@@ -64,7 +64,7 @@ form.sign-in-form {
   border-radius: 55px;
   display: grid;
   grid-template-columns: 15% 85%;
-  padding: 0 0.4rem;
+  /* padding: 0 0.4rem; */
   position: relative;
   padding: 0rem 20px 0rem 0px;
 }
@@ -465,6 +465,7 @@ select.state{
 background: transparent;
 border: none;
 outline: none;
+padding: 15px 10px !important;
 }
 
 select.state:focus{
@@ -477,9 +478,7 @@ outline: none;
   align-items: center;
 }
 
-.stateSelect select{
-  appearance: none;
-}
+
 
 .stateSelect::after{
   content: '';

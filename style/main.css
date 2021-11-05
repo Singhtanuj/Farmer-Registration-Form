@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input {
+  font-family: "Poppins", sans-serif;
+}
+
+.emblem{
+  width: 9%;
+  position: absolute;
+  top: 20px;
+  /* left: 30px; */
+  filter: drop-shadow(0px 0px 8px rgb(255 255 255 / 60%));
+}
+
+.lang{
+  display: flex;
+  align-items: center;
+  width: 55%;
+  justify-content: center;
+}
+
+.lang .input-field{
+  padding:0;
+}
+
+.stateSelect select{
+  appearance: none;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.fa-globe{
+  line-height: 0 !important;
+  pointer-events: none;
+  color: #5995fd !important;
+  font-size: 2rem !important;
+  padding-right: 5px;
+}
+
+.stateSelect_left{
+  right: 0;
+}
+
+.stateSelect_right{
+  left: 0;
+}
+
+.stateSelect_left,.stateSelect_right{
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  width: 0;
+  transition: all 0.2s;
+}
+
+.lang .stateSelect::after{
+  display: none;
+}
+
+/* #lang .stateSelect select option[value=0]{
+  font-size: 12px;
+} */
+
+#lang1.active .stateSelect,#lang2.active .stateSelect{
+  width: 100% !important;
+}
+
+#lang1.active .stateSelect::after,#lang2.active .stateSelect::after{
+  display: block;
+}
