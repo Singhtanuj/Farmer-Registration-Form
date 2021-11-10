@@ -127,13 +127,13 @@ form.sign-in-form {
   border: none;
   outline: none;
   height: 49px;
-  border-radius: 49px;
+  border-radius: 49px !important;
   color: #fff;
   font-weight: 600;
   margin: 10px 0;
   cursor: pointer;
   transition: 0.5s;
-  padding: 0 25px;
+  padding: 0 25px !important;
 }
 
 .btn:hover {
@@ -403,61 +403,6 @@ form.sign-in-form {
 /* ***************** New ***************** */
 
 
-/* Radio Button */
-
-.radio-field{
-  max-width: 380px;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  margin: 10px 0;
-  padding: 0px 0.4rem;
-  height: 55px;
-  align-items: center;
-}
-
-.radio {
-margin: 0.5rem;
-}
-.radio input[type="radio"] {
-position: absolute;
-opacity: 0;
-}
-.radio-label{
-display: flex;
-}
-.radio input[type="radio"] + .radio-label:before {
-content: '';
-background: #f4f4f4;
-border-radius: 100%;
-border: 1px solid #b4b4b4;
-display: inline-block;
-width: 2em;
-height: 1.3em;
-position: relative;
-/* top: -0.2em; */
-margin-right: 1em;
-vertical-align: top;
-cursor: pointer;
-text-align: center;
-transition: all 250ms ease;
-}
-.radio input[type="radio"]:checked + .radio-label:before {
-background-color: #3197ee;
-box-shadow: inset 0 0 0 4px #f4f4f4;
-}
-.radio input[type="radio"]:focus + .radio-label:before {
-outline: none;
-border-color: #3197ee;
-}
-.radio input[type="radio"]:disabled + .radio-label:before {
-box-shadow: inset 0 0 0 4px #f4f4f4;
-border-color: #b4b4b4;
-background: #b4b4b4;
-}
-.radio input[type="radio"] + .radio-label:empty:before {
-margin-right: 0;
-}
 
 /* state select */
 
