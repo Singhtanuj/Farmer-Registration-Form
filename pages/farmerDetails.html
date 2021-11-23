@@ -9,9 +9,29 @@
   <link rel="stylesheet" href="../assets/styles/style.css">
 
 </head>
+<header class="header1">
+  <div class="imgContainer">
+    <img src="../img/avtar-4.png" alt="avtar">
+    <div class="imgTitle">
+      <span class="farmer_Registration">Farmer Registration</span>  
+      <span class="system">System</span> 
+    </div>
+  </div>
+  <div class="rightContainer"></div>
+</header>
+<!-- <header class="header2">
+  <div class="imgContainer">
+    <img src="../img/avtar-4.png" alt="avtar">
+    <div class="imgTitle">
+      <span class="farmer_Registration">Farmer Registration</span>  
+      <span class="system">System</span> 
+    </div>
+  </div>
+  <div class="rightContainer"></div>
+</header> -->
 <div class="container d-flex details_Container p-0">
 
-  <ul id="tabs" class="nav nav-tabs" role="tablist" style="background: aliceblue;">
+  <ul id="tabs" class="nav nav-tabs" role="tablist" style="background: #f0fffd; min-height: calc(100% - 96px);">
     <li class="nav-item">
       <a id="tab-A" href="#pane-A" class="nav-link active" data-toggle="tab" role="tab">Farmer’s Personal Details</a>
     </li>
@@ -61,13 +81,13 @@
                     <div class="desc">
                       <div class="radio-field-btn">
                         <div class="radioBtnBox">
-                          <input id="rural" name="selectArea" type="radio" checked>
-                          <label for="rural" class="radio-label">Rural Farmer Registration</label>
+                          <input id="rural" name="selectArea" type="radio" checked />
+                          <label for="rural" class="radio-label">Rural Farmer</label>
                         </div>
 
                         <div class="radioBtnBox">
                           <input id="urban" name="selectArea" type="radio">
-                          <label for="urban" class="radio-label">Urban Farmer Registration</label>
+                          <label for="urban" class="radio-label">Urban Farmer</label>
                         </div>
                       </div>
                     </div>
@@ -257,312 +277,331 @@
           <div class="panelBody mt-5 animate__animated animate__fadeIn animate__delay-1s">
 
             <div class="pointDescWrap">
-              <div class="container">
 
-                <!-- Ownership of land -->
+              <!-- Add whole container button -->
+              <div class="add_Additional_Row">
 
-                <div class="row my-5">
-                      <div class="col-lg-2">
-                        <div class="points"><span class="serial">1.</span> Ownership of land: </div>
-                      </div>
-                      <div class="col-lg-10">
-                        <div class="desc">
-                          <div class="row">
-                            <div class="col-lg-3">
-                              <div class="selectCover">
-                                <select class="address">
-                                  <option value="dist">--Select ownership of land--</option>
-                                  <option value="AL">Alabama</option>
-                                  <option value="WY">Wyoming</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-
-                <!-- Land Holding Type -->
-                <div class="row my-5">
-                  <div class="container shadowed">
-                    <div class="row">
-                      <div class="col-lg-6">
-                        <div class="row">
-                          <div class="col-lg-4">
-                            <div class="points"><span class="serial">2.</span> Land Holding Type: </div>
-                          </div>
-
-                          <div class="col-lg-6">
-                            <div class="desc">
-                              <div class="row">
-                                <div class="col-lg-10">
-                                  <div class="selectCover">
-                                    <select class="address">
-                                      <option value="dist">--Select Land Holding Type--</option>
-                                      <option value="AL">Alabama</option>
-                                      <option value="WY">Wyoming</option>
-                                    </select>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-lg-6">
-                        <div class="row">
-                          <div class="col-lg-4">
-                            <div class="points"> If joint % of share:: </div>
-                          </div>
-
-                          <div class="col-lg-6">
-                            <div class="desc">
-                              <div class="row">
-                                <div class="col-lg-10">
-                                  <input type="text" class="form-control" placeholder="percentage">
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-
-                </div>
-
-                <!-- Land Holding (In Acre) -->
-                <div class="row my-5">
-                  <div class="col-lg-2">
-                    <div class="points"><span class="serial">3.</span> <span style="display: block;">Land Holding </span> (In Acre): </div>
-                  </div>
-                  <div class="col-lg-10">
-                    <div class="desc">
-                      <div class="row">
-                        <div class="col-lg-3">
-                          <div class="selectCover">
-                            <select class="address">
-                              <option value="dist">--Select Farmer Type--</option>
-                              <option value="AL">Alabama</option>
-                              <option value="WY">Wyoming</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Authorized Tenants -->
-                <div class="authorized-tenants">
-                  <div class="row row mt-5 mb-3">
-                    <div class="col-lg-12">
-                      <div class="points"><span class="serial">4.</span> Authorized Tenants: </div>
-                    </div>
-                  </div>
-
+                <div class="container">
                   <div class="row">
                     <div class="col-lg-12">
+                      <div class="addButton mb-2">  
+                        <button class="btn-primary addBtn ml-auto" alt="Add Farmer's Land Details"> <i class="fas fa-plus"></i> </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <hr>
+
+                <div class="container" >
+
+                  <!-- Ownership of land -->
+
+                  <div class="row my-5">
+                    <div class="col-lg-2">
+                      <div class="points"><span class="serial">1.</span> Ownership of land: </div>
+                    </div>
+                    <div class="col-lg-10">
                       <div class="desc">
                         <div class="row">
-                          <div class="col-lg-12 table-responsive">
-                            <table class="table table-bordered">
-                              <thead>
-                                <th>Name</th>
-                                <th>Aadhar Number</th>
-                                <th>Land Allotted (In Acre)</th>
-                              </thead>
-                              <tbody>
-                                <td>XXX</td>
-                                <td>XXX</td>
-                                <td>XXX</td>
-                              </tbody>
-                              <tfoot>
-                                <tr>
-                                  <td colspan="3" class="text-right"><button class="btn-primary addBtn">Add</button>
-                                  </td>
-                                </tr>
-                              </tfoot>
-                            </table>
+                          <div class="col-lg-3">
+                            <div class="selectCover">
+                              <select class="address">
+                                <option value="dist">--Select ownership of land--</option>
+                                <option value="AL">Alabama</option>
+                                <option value="WY">Wyoming</option>
+                              </select>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                </div>
-
-                <!-- Land Record Number -->
-                <div class="row my-5">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-lg-6">
-                        <div class="row">
-                          <div class="col-lg-4">
-                            <div class="points"><span class="serial">5.</span> Land Record Number: </div>
-                          </div>
-
-                          <div class="col-lg-6">
-                            <div class="desc">
-                              <div class="row">
-                                <div class="col-lg-10">
-                                  <div class="selectCover">
-                                    <select class="address">
-                                      <option value="dist">--Select Type of Land Record--</option>
-                                      <option value="AL">Alabama</option>
-                                      <option value="WY">Wyoming</option>
-                                    </select>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-lg-6">
-                        <div class="row">
-                          <div class="col-lg-4">
-                            <div class="points"><span class="serial">6.</span> Land Record No. </div>
-                          </div>
-
-                          <div class="col-lg-6">
-                            <div class="desc">
-                              <div class="row">
-                                <div class="col-lg-10">
-                                  <input type="text" class="form-control" placeholder="land record number">
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Upload supporting document -->
-                <div class="row my-5">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-lg-6">
-                        <div class="row">
-                          <div class="col-lg-4">
-                            <div class="points"><span class="serial">7.</span> Upload supporting document: </div>
-                          </div>
-
-                          <div class="col-lg-6">
-                            <div class="desc">
-                              <div class="row">
-                                <div class="col-lg-10">
-                                  <div class="selectCover">
-                                    <select class="address">
-                                      <option value="dist">--Select Type of document--</option>
-                                      <option value="AL">Alabama</option>
-                                      <option value="WY">Wyoming</option>
-                                    </select>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-lg-6">
-                        <div class="row">
-                          <div class="col-lg-4 position-relative">
-                            <div class="points instruct">Click for Instructions </div>
-                            <div class="detailed_Instruct position-absolute">
-                              <ol>
-                                <li>Files less then 5mb.</li>
-                                <li>Allowed file type: .PDF, .JPEG</li>
-                                <li>Please provide file size reduce link</li>
-                              </ol>
-                            </div>
-                          </div>
-                          <div class="col-lg-4">
-                            <div class="desc">
-                              <div class="row">
-                                <div class="col-lg-10">
-                                  <input type="file">
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-
-                </div>
-
-                <!-- Cultivable land Address -->
-                <div class="row my-5">
-                  <div class="col-lg-2">
-                    <div class="points"><span class="serial">8.</span> Cultivable land Address: </div>
-                  </div>
-                  <div class="col-lg-10">
-                    <div class="desc">
-
+                  <!-- Land Holding Type -->
+                  <div class="row my-5">
+                    <div class="container shadowed">
                       <div class="row">
-                        <div class="col-lg-3">
-                          <p class="m-1">District</p>
-                          <div class="selectCover">
-                            <select class="address">
-                              <option value="0">--Please Select--</option>
-                              <option value="1">Alabama</option>
-                              <option value="2">Wyoming</option>
-                            </select>
+                        <div class="col-lg-6">
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <div class="points"><span class="serial">2.</span> Land Holding Type: </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                              <div class="desc">
+                                <div class="row">
+                                  <div class="col-lg-10">
+                                    <div class="selectCover">
+                                      <select class="address">
+                                        <option value="dist">--Select Land Holding Type--</option>
+                                        <option value="AL">Alabama</option>
+                                        <option value="WY">Wyoming</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                        <div class="col-lg-3">
-                          <p class="m-1">Sub-District</p>
-                          <div class="selectCover">
-                            <select class="address">
-                              <option value="3">--Please Select--</option>
-                              <option value="4">Alabama</option>
-                              <option value="5">Wyoming</option>
-                            </select>
-                          </div>
 
+                        <div class="col-lg-6">
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <div class="points"> If, joint % of share: </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                              <div class="desc">
+                                <div class="row">
+                                  <div class="col-lg-10">
+                                    <input type="text" class="form-control" placeholder="percentage">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        <div class="col-lg-3">
-                          <p class="m-1">Block</p>
-                          <div class="selectCover">
-                            <select class="address">
-                              <option value="6">--Please Select--</option>
-                              <option value="7">Alabama</option>
-                              <option value="8">Wyoming</option>
-                            </select>
-                          </div>
 
-                        </div>
-                        <div class="col-lg-3">
-                          <p class="m-1">Village/Town</p>
-                          <div class="selectCover">
-                            <select class="address">
-                              <option value="9">--Please Select--</option>
-                              <option value="10">Alabama</option>
-                              <option value="11">Wyoming</option>
-                            </select>
-                          </div>
+                      </div>
+                    </div>
 
+                  </div>
+
+                  <!-- Land Holding (In Acre) -->
+                  <div class="row my-5">
+                    <div class="col-lg-2">
+                      <div class="points"><span class="serial">3.</span> <span style="display: block;">Land Holding
+                        </span> (In Acre): </div>
+                    </div>
+                    <div class="col-lg-10">
+                      <div class="desc">
+                        <div class="row">
+                          <div class="col-lg-3">
+                            <div class="selectCover">
+                              <select class="address">
+                                <option value="dist">--Select Farmer Type--</option>
+                                <option value="AL">Alabama</option>
+                                <option value="WY">Wyoming</option>
+                              </select>
+                            </div>
+                          </div>
                         </div>
                       </div>
-
-
                     </div>
                   </div>
+
+                  <!-- Authorized Tenants -->
+                  <div class="authorized-tenants">
+                    <div class="row row mt-5 mb-3">
+                      <div class="col-lg-12">
+                        <div class="points"><span class="serial">4.</span> Authorized Tenants: </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="desc">
+                          <div class="row">
+                            <div class="col-lg-12 table-responsive">
+                              <table class="table table-bordered">
+                                <thead>
+                                  <th>Name</th>
+                                  <th>Aadhar Number</th>
+                                  <th>Land Allotted (In Acre)</th>
+                                </thead>
+                                <tbody>
+                                  <td>XXX</td>
+                                  <td>XXX</td>
+                                  <td>XXX</td>
+                                </tbody>
+                                <tfoot>
+                                  <tr>
+                                    <td colspan="3" class="text-right"><button class="btn-primary addBtn">Add</button>
+                                    </td>
+                                  </tr>
+                                </tfoot>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <!-- Land Record Number -->
+                  <div class="row my-5">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <div class="points"><span class="serial">5.</span> Land Record Number: </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                              <div class="desc">
+                                <div class="row">
+                                  <div class="col-lg-10">
+                                    <div class="selectCover">
+                                      <select class="address">
+                                        <option value="dist">--Select Type of Land Record--</option>
+                                        <option value="AL">Alabama</option>
+                                        <option value="WY">Wyoming</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <div class="points"><span class="serial">6.</span> Land Record No. </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                              <div class="desc">
+                                <div class="row">
+                                  <div class="col-lg-10">
+                                    <input type="text" class="form-control" placeholder="land record number">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Upload supporting document -->
+                  <div class="row my-5">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="row">
+                            <div class="col-lg-4">
+                              <div class="points"><span class="serial">7.</span> Upload supporting document: </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                              <div class="desc">
+                                <div class="row">
+                                  <div class="col-lg-10">
+                                    <div class="selectCover">
+                                      <select class="address">
+                                        <option value="dist">--Select Type of document--</option>
+                                        <option value="AL">Alabama</option>
+                                        <option value="WY">Wyoming</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                          <div class="row">
+                            <div class="col-lg-4 position-relative">
+                              <div class="points instruct">Click for Instructions </div>
+                              <div class="detailed_Instruct position-absolute">
+                                <ol>
+                                  <li>Files less then 5mb.</li>
+                                  <li>Allowed file type: .PDF, .JPEG</li>
+                                  <li>Please provide file size reduce link</li>
+                                </ol>
+                              </div>
+                            </div>
+                            <div class="col-lg-4">
+                              <div class="desc">
+                                <div class="row">
+                                  <div class="col-lg-10">
+                                    <input type="file">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <!-- Cultivable land Address -->
+                  <div class="row my-5">
+                    <div class="col-lg-2">
+                      <div class="points"><span class="serial">8.</span> Cultivable land Address: </div>
+                    </div>
+                    <div class="col-lg-10">
+                      <div class="desc">
+
+                        <div class="row">
+                          <div class="col-lg-3">
+                            <p class="m-1">District</p>
+                            <div class="selectCover">
+                              <select class="address">
+                                <option value="0">--Please Select--</option>
+                                <option value="1">Alabama</option>
+                                <option value="2">Wyoming</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <p class="m-1">Sub-District</p>
+                            <div class="selectCover">
+                              <select class="address">
+                                <option value="3">--Please Select--</option>
+                                <option value="4">Alabama</option>
+                                <option value="5">Wyoming</option>
+                              </select>
+                            </div>
+
+                          </div>
+                          <div class="col-lg-3">
+                            <p class="m-1">Block</p>
+                            <div class="selectCover">
+                              <select class="address">
+                                <option value="6">--Please Select--</option>
+                                <option value="7">Alabama</option>
+                                <option value="8">Wyoming</option>
+                              </select>
+                            </div>
+
+                          </div>
+                          <div class="col-lg-3">
+                            <p class="m-1">Village/Town</p>
+                            <div class="selectCover">
+                              <select class="address">
+                                <option value="9">--Please Select--</option>
+                                <option value="10">Alabama</option>
+                                <option value="11">Wyoming</option>
+                              </select>
+                            </div>
+
+                          </div>
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
-
-
               </div>
+
+              <hr>
 
               <div class="container">
                 <div class="row">
@@ -637,7 +676,7 @@
                     <div class="desc">
                       <div class="row">
                         <div class="col-lg-4">
-                          <input type="text" class="form-control" placeholder="First Name">
+                          <input type="text" class="form-control" placeholder="Account holder name">
                         </div>
                       </div>
                     </div>
@@ -653,7 +692,7 @@
                     <div class="desc">
                       <div class="row">
                         <div class="col-lg-4">
-                          <input type="number" class="form-control" placeholder="First Name">
+                          <input type="number" class="form-control" placeholder="Account number">
                         </div>
                       </div>
                     </div>
@@ -669,7 +708,7 @@
                     <div class="desc">
                       <div class="row">
                         <div class="col-lg-4">
-                          <input type="text" class="form-control" placeholder="First Name">
+                          <input type="text" class="form-control" placeholder="IFSC Code">
                         </div>
                       </div>
                     </div>
@@ -786,7 +825,8 @@
 </button> -->
 
 <!-- Modal -->
-<div class="modal fade" id="preview" tabindex="-1" role="dialog" aria-labelledby="previewTitle" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+<div class="modal fade" id="preview" tabindex="-1" role="dialog" aria-labelledby="previewTitle" aria-hidden="true"
+  data-backdrop="static" data-keyboard="false">
   <div class="modal-dialog modal-dialog-centered" style="padding: 0px 60px;" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -799,7 +839,7 @@
         <div class="container d-flex details_Container p-0">
 
           <div id="tab-content-wrapper">
-        
+
             <!-- Farmer’s Personal Details Panel -->
             <div class="card tab-pane show active  ">
               <div class="card-header" role="tab" id="heading-A">
@@ -807,146 +847,147 @@
                   Farmer’s Personal Details
                 </h5>
               </div>
-                <div class="card-body">
-        
-                  <!-- Heading -->
-                  <div class="panel_heading text-center">
-                    Farmer’s Personal Details
-                  </div>
-        
-                  <!-- Body -->
-                  <div class="panelBody mt-5 ">
-        
-                    <div class="pointDescWrap">
-                      <div class="container">
-                        <!-- Area Type -->
-                        <div class="row my-5">
-                          <div class="col-lg-2">
-                            <div class="points"><span class="serial">1.</span> Area Type: </div>
-                          </div>
-                          <div class="col-lg-9">
-                            <div class="desc">
-                              <div class="radio-field-btn">
-                                <div class="radioBtnBox">
-                                  <input id="rural" name="selectArea" type="radio" checked disabled>
-                                  <label for="rural" class="radio-label">Rural Farmer Registration</label>
-                                </div>
-        
-                                <div class="radioBtnBox">
-                                  <input id="urban" name="selectArea" type="radio" disabled>
-                                  <label for="urban" class="radio-label">Urban Farmer Registration</label>
-                                </div>
+              <div class="card-body">
+
+                <!-- Heading -->
+                <div class="panel_heading text-center">
+                  Farmer’s Personal Details
+                </div>
+
+                <!-- Body -->
+                <div class="panelBody mt-5 ">
+
+                  <div class="pointDescWrap">
+                    <div class="container">
+                      <!-- Area Type -->
+                      <div class="row my-5">
+                        <div class="col-lg-2">
+                          <div class="points"><span class="serial">1.</span> Area Type: </div>
+                        </div>
+                        <div class="col-lg-9">
+                          <div class="desc">
+                            <div class="radio-field-btn">
+                              <div class="radioBtnBox">
+                                <input id="rural" name="selectArea" type="radio" checked disabled>
+                                <label for="rural" class="radio-label">Rural Farmer Registration</label>
+                              </div>
+
+                              <div class="radioBtnBox">
+                                <input id="urban" name="selectArea" type="radio" disabled>
+                                <label for="urban" class="radio-label">Urban Farmer Registration</label>
                               </div>
                             </div>
                           </div>
                         </div>
-        
-                        <!-- Address -->
-                        <div class="row my-5">
-                          <div class="col-lg-2">
-                            <div class="points"><span class="serial">2.</span> Address: </div>
-                          </div>
-                          <div class="col-lg-10">
-                            <div class="desc">
-        
-                              <div class="row">
-                                <div class="col-lg-3">
-                                  <p class="m-1">District</p>
-                                  <!-- <div class="selectCover">
+                      </div>
+
+                      <!-- Address -->
+                      <div class="row my-5">
+                        <div class="col-lg-2">
+                          <div class="points"><span class="serial">2.</span> Address: </div>
+                        </div>
+                        <div class="col-lg-10">
+                          <div class="desc">
+
+                            <div class="row">
+                              <div class="col-lg-3">
+                                <p class="m-1">District</p>
+                                <!-- <div class="selectCover">
                                     <select class="address">
                                       <option value="dist">--Please Select--</option>
                                       <option value="AL">Alabama</option>
                                       <option value="WY">Wyoming</option>
                                     </select>
                                   </div> -->
-                                  <input type="text" class="form-control" placeholder="District" disabled>
+                                <input type="text" class="form-control" placeholder="District" disabled>
 
-                                </div>
-                                <div class="col-lg-3">
-                                  <p class="m-1">Sub-District</p>
-                                  <!-- <div class="selectCover">
+                              </div>
+                              <div class="col-lg-3">
+                                <p class="m-1">Sub-District</p>
+                                <!-- <div class="selectCover">
                                     <select class="address">
                                       <option value="Sub-Dist">--Please Select--</option>
                                       <option value="AL">Alabama</option>
                                       <option value="WY">Wyoming</option>
                                     </select>
                                   </div> -->
-                                  <input type="text" class="form-control" placeholder="Sub-District" disabled>
+                                <input type="text" class="form-control" placeholder="Sub-District" disabled>
 
-        
-                                </div>
-                                <div class="col-lg-3">
-                                  <p class="m-1">Block</p>
-                                  <!-- <div class="selectCover">
+
+                              </div>
+                              <div class="col-lg-3">
+                                <p class="m-1">Block</p>
+                                <!-- <div class="selectCover">
                                     <select class="address">
                                       <option value="Block">--Please Select--</option>
                                       <option value="AL">Alabama</option>
                                       <option value="WY">Wyoming</option>
                                     </select>
                                   </div> -->
-                                  <input type="text" class="form-control" placeholder="Block" disabled>
+                                <input type="text" class="form-control" placeholder="Block" disabled>
 
-        
-                                </div>
-                                <div class="col-lg-3">
-                                  <p class="m-1">Village/Town</p>
-                                  <!-- <div class="selectCover">
+
+                              </div>
+                              <div class="col-lg-3">
+                                <p class="m-1">Village/Town</p>
+                                <!-- <div class="selectCover">
                                     <select class="address">
                                       <option value="Vill">--Please Select--</option>
                                       <option value="AL">Alabama</option>
                                       <option value="WY">Wyoming</option>
                                     </select>
                                   </div> -->
-                                  <input type="text" class="form-control" placeholder="Village/Town" disabled>
+                                <input type="text" class="form-control" placeholder="Village/Town" disabled>
 
-        
-                                </div>
+
                               </div>
-        
-        
                             </div>
+
+
                           </div>
                         </div>
-        
-                        <!-- Farmer Name -->
-                        <div class="row my-5">
-                          <div class="col-lg-2">
-                            <div class="points"><span class="serial">3.</span> Farmer Name: </div>
-                          </div>
-                          <div class="col-lg-10">
-                            <div class="desc">
-        
-                              <div class="row">
-                                <div class="col-lg-3">
-                                  <input type="text" class="form-control" placeholder="First Name" disabled>
-                                </div>
-                                <div class="col-lg-3">
-                                  <input type="text" class="form-control" placeholder="Last Name" disabled>
-        
-                                </div>
-                                <div class="col-lg-3">
-                                  <input type="text" class="form-control" placeholder="Father/Mother/Husband Name" disabled>
-        
-                                </div>
+                      </div>
+
+                      <!-- Farmer Name -->
+                      <div class="row my-5">
+                        <div class="col-lg-2">
+                          <div class="points"><span class="serial">3.</span> Farmer Name: </div>
+                        </div>
+                        <div class="col-lg-10">
+                          <div class="desc">
+
+                            <div class="row">
+                              <div class="col-lg-3">
+                                <input type="text" class="form-control" placeholder="First Name" disabled>
                               </div>
-        
-        
+                              <div class="col-lg-3">
+                                <input type="text" class="form-control" placeholder="Last Name" disabled>
+
+                              </div>
+                              <div class="col-lg-3">
+                                <input type="text" class="form-control" placeholder="Father/Mother/Husband Name"
+                                  disabled>
+
+                              </div>
                             </div>
+
+
                           </div>
                         </div>
-        
-                        <!-- Gender -->
-                        <div class="row my-5">
-                          <div class="col-lg-2">
-                            <div class="points"><span class="serial">4.</span> Gender: </div>
-                          </div>
-                          <div class="col-lg-10">
-                            <div class="desc">
-        
-                              <div class="row">
-                                <div class="col-lg-3">
-                                  <!-- <p class="m-1">Gender</p> -->
-                                  <!-- <div class="selectCover">
+                      </div>
+
+                      <!-- Gender -->
+                      <div class="row my-5">
+                        <div class="col-lg-2">
+                          <div class="points"><span class="serial">4.</span> Gender: </div>
+                        </div>
+                        <div class="col-lg-10">
+                          <div class="desc">
+
+                            <div class="row">
+                              <div class="col-lg-3">
+                                <!-- <p class="m-1">Gender</p> -->
+                                <!-- <div class="selectCover">
                                     <select class="address">
                                       <option value="dist">--Please Select--</option>
                                       <option value="AL">Male</option>
@@ -954,96 +995,96 @@
                                       <option value="WY">Others</option>
                                     </select>
                                   </div> -->
-                                  <input type="text" class="form-control" placeholder="Gender" disabled>
+                                <input type="text" class="form-control" placeholder="Gender" disabled>
 
-                                </div>
                               </div>
-        
                             </div>
+
                           </div>
                         </div>
-        
-                        <!-- Category -->
-                        <div class="row my-5">
-                          <div class="col-lg-2">
-                            <div class="points"><span class="serial">5.</span> Category: </div>
-                          </div>
-                          <div class="col-lg-10">
-                            <div class="desc">
-        
-                              <div class="row">
-                                <div class="col-lg-3">
-                                  <!-- <p class="m-1">Category</p> -->
-                                  <!-- <div class="selectCover">
+                      </div>
+
+                      <!-- Category -->
+                      <div class="row my-5">
+                        <div class="col-lg-2">
+                          <div class="points"><span class="serial">5.</span> Category: </div>
+                        </div>
+                        <div class="col-lg-10">
+                          <div class="desc">
+
+                            <div class="row">
+                              <div class="col-lg-3">
+                                <!-- <p class="m-1">Category</p> -->
+                                <!-- <div class="selectCover">
                                     <select class="address">
                                       <option value="dist">--Please Select--</option>
                                       <option value="AL">Alabama</option>
                                       <option value="WY">Wyoming</option>
                                     </select>
                                   </div> -->
-                                  <input type="text" class="form-control" placeholder="Category" disabled>
+                                <input type="text" class="form-control" placeholder="Category" disabled>
 
-                                </div>
                               </div>
-        
-        
                             </div>
+
+
                           </div>
                         </div>
-        
-        
                       </div>
-        
-                      <!-- <div class="container">
+
+
+                    </div>
+
+                    <!-- <div class="container">
                         <div class="row">
                           <div class="col-lg-4">
                             <div class="btn btn-primary">Next</div>
                           </div>
                         </div>
                       </div> -->
-        
-        
-                    </div>
-        
+
+
                   </div>
-        
+
                 </div>
-        
+
+              </div>
+
             </div>
-        <hr>
+            <hr>
             <!-- Farmer's Land Details Panel -->
-            <div id="pane-B" class="card tab-pane show " >
+            <div id="pane-B" class="card tab-pane show ">
               <div class="card-header">
                 <h5 class="mb-0">
                   Farmer's Land Details
                 </h5>
               </div>
-              <div  class="collapse" >
+              <div class="collapse">
                 <div class="card-body">
-        
+
                   <!-- Heading -->
                   <div class="panel_heading text-center">
                     Farmer's Land Details
                   </div>
-        
-        
+
+
                   <!-- Body -->
                   <div class="panelBody mt-5 ">
-        
+
                     <div class="pointDescWrap">
                       <div class="container">
-        
+
                         <!-- Ownership of land -->
-        
+
                         <div class="row my-5">
-                              <div class="col-lg-2">
-                                <div class="points"><span class="serial">1.</span> Ownership of land: </div>
-                              </div>
-                              <div class="col-lg-10">
-                                <div class="desc">
-                                  <div class="row">
-                                    <div class="col-lg-3">
-                                      <!-- <div class="selectCover">
+                          <div class="col-lg-2">
+                            <div class="points"><span class="serial">1.</span> Ownership of land: </div>
+                          </div>
+                          <div class="col-lg-10">
+                            <div class="desc">
+                              <div class="row">
+                                <div class="col-lg-3">
+                                  <!-- <div class="selectCover">
                                         <select class="address">
                                           <option value="dist">--Select ownership of land--</option>
                                           <option value="AL">Alabama</option>
@@ -1052,12 +1093,12 @@
                                       </div> -->
                                   <input type="text" class="form-control" placeholder="Ownership of land" disabled>
 
-                                    </div>
-                                  </div>
                                 </div>
                               </div>
+                            </div>
+                          </div>
                         </div>
-        
+
                         <!-- Land Holding Type -->
                         <div class="row my-5">
                           <div class="container shadowed">
@@ -1067,7 +1108,7 @@
                                   <div class="col-lg-4">
                                     <div class="points"><span class="serial">2.</span> Land Holding Type: </div>
                                   </div>
-        
+
                                   <div class="col-lg-6">
                                     <div class="desc">
                                       <div class="row">
@@ -1079,7 +1120,8 @@
                                               <option value="WY">Wyoming</option>
                                             </select>
                                           </div> -->
-                                          <input type="text" class="form-control" placeholder="Land Holding Type" disabled>
+                                          <input type="text" class="form-control" placeholder="Land Holding Type"
+                                            disabled>
 
                                         </div>
                                       </div>
@@ -1087,13 +1129,13 @@
                                   </div>
                                 </div>
                               </div>
-        
+
                               <div class="col-lg-6">
                                 <div class="row">
                                   <div class="col-lg-4">
                                     <div class="points"> If joint % of share: </div>
                                   </div>
-        
+
                                   <div class="col-lg-6">
                                     <div class="desc">
                                       <div class="row">
@@ -1105,16 +1147,17 @@
                                   </div>
                                 </div>
                               </div>
-        
+
                             </div>
                           </div>
-        
+
                         </div>
-        
+
                         <!-- Land Holding (In Acre) -->
                         <div class="row my-5">
                           <div class="col-lg-2">
-                            <div class="points"><span class="serial">3.</span> <span style="display: block;">Land Holding </span> (In Acre): </div>
+                            <div class="points"><span class="serial">3.</span> <span style="display: block;">Land
+                                Holding </span> (In Acre): </div>
                           </div>
                           <div class="col-lg-10">
                             <div class="desc">
@@ -1134,7 +1177,7 @@
                             </div>
                           </div>
                         </div>
-        
+
                         <!-- Authorized Tenants -->
                         <div class="authorized-tenants">
                           <div class="row row mt-5 mb-3">
@@ -1142,7 +1185,7 @@
                               <div class="points"><span class="serial">4.</span> Authorized Tenants: </div>
                             </div>
                           </div>
-        
+
                           <div class="row">
                             <div class="col-lg-12">
                               <div class="desc">
@@ -1171,9 +1214,9 @@
                               </div>
                             </div>
                           </div>
-        
+
                         </div>
-        
+
                         <!-- Land Record Number -->
                         <div class="row my-5">
                           <div class="container">
@@ -1183,7 +1226,7 @@
                                   <div class="col-lg-4">
                                     <div class="points"><span class="serial">5.</span> Land Record Number: </div>
                                   </div>
-        
+
                                   <div class="col-lg-6">
                                     <div class="desc">
                                       <div class="row">
@@ -1195,7 +1238,8 @@
                                               <option value="WY">Wyoming</option>
                                             </select>
                                           </div> -->
-                                          <input type="text" class="form-control" placeholder="Land Record Number" disabled>
+                                          <input type="text" class="form-control" placeholder="Land Record Number"
+                                            disabled>
 
                                         </div>
                                       </div>
@@ -1203,29 +1247,30 @@
                                   </div>
                                 </div>
                               </div>
-        
+
                               <div class="col-lg-6">
                                 <div class="row">
                                   <div class="col-lg-4">
                                     <div class="points"><span class="serial">6.</span> Land Record No. </div>
                                   </div>
-        
+
                                   <div class="col-lg-6">
                                     <div class="desc">
                                       <div class="row">
                                         <div class="col-lg-10">
-                                          <input type="text" class="form-control" placeholder="land record number" disabled>
+                                          <input type="text" class="form-control" placeholder="land record number"
+                                            disabled>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
                                 </div>
                               </div>
-        
+
                             </div>
                           </div>
                         </div>
-        
+
                         <!-- Upload supporting document -->
                         <div class="row my-5">
                           <div class="container">
@@ -1233,9 +1278,10 @@
                               <div class="col-lg-6">
                                 <div class="row">
                                   <div class="col-lg-4">
-                                    <div class="points"><span class="serial">7.</span> Upload supporting document: </div>
+                                    <div class="points"><span class="serial">7.</span> Upload supporting document:
+                                    </div>
                                   </div>
-        
+
                                   <div class="col-lg-6">
                                     <div class="desc">
                                       <div class="row">
@@ -1255,7 +1301,7 @@
                                   </div>
                                 </div>
                               </div>
-        
+
                               <div class="col-lg-6">
                                 <div class="row">
                                   <div class="col-lg-4 position-relative">
@@ -1268,15 +1314,15 @@
                                       </ol>
                                     </div>
                                   </div>
-        
+
                                 </div>
                               </div>
-        
+
                             </div>
                           </div>
-        
+
                         </div>
-        
+
                         <!-- Cultivable land Address -->
                         <div class="row my-5">
                           <div class="col-lg-2">
@@ -1284,7 +1330,7 @@
                           </div>
                           <div class="col-lg-10">
                             <div class="desc">
-        
+
                               <div class="row">
                                 <div class="col-lg-3">
                                   <p class="m-1">District</p>
@@ -1308,7 +1354,7 @@
                                     </select>
                                   </div> -->
                                   <input type="text" class="form-control" placeholder="Sub District" disabled>
-        
+
                                 </div>
                                 <div class="col-lg-3">
                                   <p class="m-1">Block</p>
@@ -1320,7 +1366,7 @@
                                     </select>
                                   </div> -->
                                   <input type="text" class="form-control" placeholder="Block" disabled>
-        
+
                                 </div>
                                 <div class="col-lg-3">
                                   <p class="m-1">Village/Town</p>
@@ -1332,18 +1378,18 @@
                                     </select>
                                   </div> -->
                                   <input type="text" class="form-control" placeholder="Village/Town" disabled>
-                                  
+
                                 </div>
                               </div>
-        
-        
+
+
                             </div>
                           </div>
                         </div>
-        
-        
+
+
                       </div>
-        
+
                       <!-- <div class="container">
                         <div class="row">
                           <div class="col-lg-4">
@@ -1351,15 +1397,15 @@
                           </div>
                         </div>
                       </div> -->
-        
+
                     </div>
                   </div>
-        
-        
+
+
                 </div>
               </div>
             </div>
-        <hr>
+            <hr>
             <!-- Farmer's Bank Account Details Panel -->
             <div id="pane-C" class="card tab-pane show ">
               <div class="card-header">
@@ -1367,20 +1413,20 @@
                   Farmer's Bank Account Details
                 </h5>
               </div>
-              <div class="collapse" >
+              <div class="collapse">
                 <div class="card-body">
-        
+
                   <!-- Heading -->
                   <div class="panel_heading text-center">
                     Farmer's Bank Account Details
                   </div>
-        
+
                   <!-- Body -->
                   <div class="panelBody mt-5 ">
-        
+
                     <div class="pointDescWrap">
                       <div class="container">
-        
+
                         <!-- Aadhar linked bank name -->
                         <div class="row my-5">
                           <div class="col-lg-3">
@@ -1405,7 +1451,7 @@
                             </div>
                           </div>
                         </div>
-        
+
                         <!-- Account holder name -->
                         <div class="row my-5">
                           <div class="col-lg-3">
@@ -1421,7 +1467,7 @@
                             </div>
                           </div>
                         </div>
-        
+
                         <!-- Account number -->
                         <div class="row my-5">
                           <div class="col-lg-3">
@@ -1437,7 +1483,7 @@
                             </div>
                           </div>
                         </div>
-        
+
                         <!-- IFSC Code -->
                         <div class="row my-5">
                           <div class="col-lg-3">
@@ -1453,7 +1499,7 @@
                             </div>
                           </div>
                         </div>
-        
+
                         <!-- Type of bank account -->
                         <div class="row my-5">
                           <div class="col-lg-3">
@@ -1477,9 +1523,9 @@
                             </div>
                           </div>
                         </div>
-        
+
                       </div>
-        
+
                       <!-- <div class="container">
                         <div class="row">
                           <div class="col-lg-4">
@@ -1487,53 +1533,55 @@
                           </div>
                         </div>
                       </div> -->
-        
+
                     </div>
                   </div>
-        
+
                 </div>
               </div>
             </div>
-        <hr>
+            <hr>
             <!--  Self-Declaration Panel -->
             <div id="pane-D" class="card tab-pane show ">
-              <div class="card-header" >
+              <div class="card-header">
                 <h5 class="mb-0">
                   Self-Declaration
                 </h5>
               </div>
               <div class="collapse">
                 <div class="card-body">
-        
+
                   <!-- Heading -->
                   <div class="panel_heading text-center">
                     Self-Declaration
                   </div>
-        
+
                   <!-- Body -->
                   <div class="panelBody mt-5 ">
-        
+
                     <div class="pointDescWrap">
                       <div class="container">
-        
+
                         <!-- Self-Declaration -->
                         <div class="row my-5">
                           <div class="col-lg-12">
-                            I, Shri/Smt ......................... declare that I give my consent and agree that DoF responsible
+                            I, Shri/Smt ......................... declare that I give my consent and agree that DoF
+                            responsible
                             for
                             the implementation of the DBT in Fert in the Union/State Government can use my Aadhaar
                             number and other information provided in the declaration to verify my eligibility as per
                             scheme guidelines with the concerned agencies.
                             I declare that all the statements made in the application form are true and complete to the
                             best of my knowledge and belief and I understand that in the event of any information
-                            being found false or incorrect at any stage or not satisfying the eligibility criteria according
+                            being found false or incorrect at any stage or not satisfying the eligibility criteria
+                            according
                             to the requirements, my application is liable to be canceled.
                           </div>
-        
+
                         </div>
-        
+
                       </div>
-        
+
                       <!-- <div class="container">
                         <div class="row">
                           <div class="col-lg-2 d-flex justify-content-between">
@@ -1542,16 +1590,16 @@
                           </div>
                         </div>
                       </div> -->
-        
+
                     </div>
                   </div>
-        
+
                 </div>
               </div>
             </div>
-        
+
           </div>
-        
+
         </div>
       </div>
       <div class="modal-footer">

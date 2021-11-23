@@ -5,7 +5,7 @@
 }
 
 .nav-tabs {
-  /* height:100vh; */
+  background: #f0fffd;
 }
 
 .nav-tabs {
@@ -20,7 +20,7 @@
 }
 
 .details_Container{
-  height: 100vh;
+  min-height: calc(100vh - 96px);
 }
 
 .radio input[type="radio"] + .radio-label:before {
@@ -86,9 +86,10 @@
 
 .instruct{
   text-decoration: underline;
-    color: #4182bb;
-    font-size: 15px;
-    letter-spacing: 0.099em;
+  color: #4182bb;
+  font-size: 15px;
+  letter-spacing: 0.099em;
+  cursor: pointer;
 }
 
 .detailed_Instruct{
@@ -109,11 +110,16 @@
   background: #c82333 !important;
 }
 
+.addButton{
+  display: flex;
+}
+
 .addBtn{
   padding: 3px 15px;
-    border-radius: 5px;
-    outline: 0;
-    border: 0;
+  border-radius: 5px;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
 }
 
 .addBtn:focus{
@@ -160,17 +166,17 @@
     border-color: transparent;
   }
   .nav-tabs .nav-link.active {
-    border-bottom-color: #ddd;
+    /* border-bottom-color: #ddd;
     border-right-color: #fff;
     border-bottom-left-radius: 0.25rem;
-    border-top-right-radius: 0;
+    border-top-right-radius: 0; */
     margin-right: -1px;
-    background: #0275d8;
+    background: cadetblue;
     color: #f2f2f2;
   }
   .nav-tabs .nav-link.active:hover {
-    background-color: #0275d8;
-    border-color: #0275d8 #fff #0275d8 #0275d8;
+    background: cadetblue;
+    /* border-color: #0275d8 #fff #0275d8 #0275d8; */
     color: #f2f2f2;
   }
 
