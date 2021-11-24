@@ -70,6 +70,17 @@ header{
   bottom: -4px;
 }
 
+.imgTitle .farmer_Registration::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #000000;
+  border-radius: 100%;
+  top: 12px;
+}
+
 .imgTitle .system{
   letter-spacing: 0.49em;
   text-align: center;
