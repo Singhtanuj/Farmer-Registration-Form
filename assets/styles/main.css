@@ -36,6 +36,29 @@ header{
 .imgContainer{
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.imgContainer::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 3px;
+  background: #000000;
+  border-radius: 100%;
+  width: 29%;
+  transform: rotate(-45deg);
+}
+
+.imgContainer::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 3px;
+  background: #000000;
+  border-radius: 100%;
+  width: 29%;
+  transform: rotate(45deg);
 }
 
 .imgContainer img{
