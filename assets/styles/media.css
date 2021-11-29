@@ -1,0 +1,90 @@
+@media only screen and (max-width:1400px){
+  .fieldName1{
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+   }
+  }
+
+@media only screen and (min-width:991px) and (max-width:1400px){
+  .Ownership{
+    flex: 0 0 36.666667%;
+    max-width: 43.666667%;
+    }
+    .landHolding{
+      flex: 0 0 100%;
+      max-width: 100%;
+      }
+  }
+  
+@media only screen and (min-width:996px) and (max-width:1193px){
+  .areaFieldName_1{
+    max-width: 25% !important;
+  }
+  .areaFieldName_2{
+    max-width: 75% !important;
+  }
+  .rural_urban_radio{
+      flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  }
+}
+
+@media only screen and (max-width:1193px){
+  .fieldName {
+      width: 100%;
+      max-width: 100%;
+      flex: 0 0 100%;
+  }
+  .points {
+      margin-bottom: 15px;
+  }
+}
+  
+@media only screen and (min-width:991px) and (max-width:1020px){
+  .landHolding{
+    flex: 0 0 100%;
+    max-width: 100%;
+    }
+    .Ownership{
+      flex: 0 0 50%;
+      max-width: 50%;
+      }
+  }
+
+  @media only screen and (max-width:991px){
+    .panel_heading{
+      font-size: 1.3rem;
+    }
+  }
+
+  
+  @media only screen and (max-width:768px){
+    .points{
+      font-size: 1rem;
+    }
+    .mob_mr{
+      margin-top: 1rem !important;
+      margin-bottom: 1.3rem !important;
+    }
+    .form-control {
+      font-size: 14px;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+      font-size: 13px;
+    }
+  }
+
+@media only screen and (min-width:386px) and (max-width:768px){
+  .rural_urban_radio{
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
+}
+
+/* @media only screen and (min-width:1386px) and (max-width:1663px){
+    .Ownership {
+        max-width: 22% !important;
+        flex: 0 0 16.6666%;
+    }
+} */

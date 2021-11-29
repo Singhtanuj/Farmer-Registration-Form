@@ -54,12 +54,16 @@
   font-size: 1.25rem;
   display: flex;
   align-items: baseline;
+  margin-bottom:8px;
 }
 
 .desc p{
   font-family: 'Quicksand',sans-serif;
-  font-weight: 600;
-  font-size: 0.9rem;
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #747474;
+  white-space: nowrap;
+  overflow-x: hidden;
 }
 
 .selectCover{

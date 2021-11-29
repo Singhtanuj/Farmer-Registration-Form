@@ -180,3 +180,18 @@ header{
 #lang1.active .stateSelect::after,#lang2.active .stateSelect::after{
   display: block;
 }
+
+.panel_heading span{
+  position: relative;
+}
+
+.panel_heading span::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 3px;
+  background: #ebb24b;
+  border-radius: 100%;
+}

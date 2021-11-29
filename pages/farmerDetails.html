@@ -33,13 +33,15 @@
 
   <ul id="tabs" class="nav nav-tabs" role="tablist" style="background: #f0fffd; min-height: calc(100% - 96px);">
     <li class="nav-item">
-      <a id="tab-A" data-target="#pane-A" class="nav-link active" data-toggle="tab" role="tab">Farmer’s Personal Details</a>
+      <a id="tab-A" data-target="#pane-A" class="nav-link active" data-toggle="tab" role="tab">Farmer’s Personal
+        Details</a>
     </li>
     <li class="nav-item">
       <a id="tab-B" data-target="#pane-B" class="nav-link" data-toggle="tab" role="tab">Farmer's Land Details</a>
     </li>
     <li class="nav-item">
-      <a id="tab-C" data-target="#pane-C" class="nav-link" data-toggle="tab" role="tab"> Farmer's Bank Account Details</a>
+      <a id="tab-C" data-target="#pane-C" class="nav-link" data-toggle="tab" role="tab"> Farmer's Bank Account
+        Details</a>
     </li>
     <li class="nav-item">
       <a id="tab-D" data-target="#pane-D" class="nav-link" data-toggle="tab" role="tab"> Self-Declaration</a>
@@ -109,12 +111,13 @@
     <!-- collapse example -->
 
     <!-- Farmer’s Personal Details Panel -->
-    <div id="pane-A" class="card collapse tab-pane active animate__animated animate__slideInRight" role="tabpanel" data-parent="#tab-content-wrapper" 
-    aria-labelledby="tab-A">
+    <div id="pane-A" class="card collapse tab-pane active animate__animated animate__slideInRight" role="tabpanel"
+      data-parent="#tab-content-wrapper" aria-labelledby="tab-A">
 
-      <div class="card-header" data-toggle="collapse" data-target="#collapse-A" aria-expanded="true" aria-controls="collapse-A"  role="tab" id="heading-A">
+      <div class="card-header" data-toggle="collapse" data-target="#collapse-A" aria-expanded="true"
+        aria-controls="collapse-A" role="tab" id="heading-A">
         <h5 class="mb-0">
-            Farmer’s Personal Details
+          Farmer’s Personal Details
         </h5>
       </div>
 
@@ -123,7 +126,9 @@
 
           <!-- Heading -->
           <div class="panel_heading text-center">
-            Farmer’s Personal Details
+            <span> 
+              Farmer’s Personal Details 
+            </span>
           </div>
 
           <!-- Body -->
@@ -131,13 +136,31 @@
 
             <div class="pointDescWrap">
               <div class="container">
+
                 <!-- Area Type -->
-                <div class="row my-5">
-                  <div class="col-lg-2">
+                <div class="row my-5 mob_mr">
+                  <div class="col-lg-2 fieldName areaFieldName_1">
                     <div class="points"><span class="serial">1.</span> Area Type: </div>
                   </div>
-                  <div class="col-lg-9">
-                    <div class="desc">
+                  <div class="col-lg-10 col-md-12 col-sm-12 fieldName areaFieldName_2">
+                    <div class="row">
+
+                      <div class="col-lg-3 col-md-6 col-sm-6 rural_urban_radio ">
+                        <div class="radioBtnBox">
+                          <input id="rural" name="selectedArea" type="radio" checked />
+                          <label for="rural" class="radio-label">Rural Farmer</label>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-3 col-md-6 col-sm-6 rural_urban_radio">
+                        <div class="radioBtnBox">
+                          <input id="urban" name="selectedArea" type="radio">
+                          <label for="urban" class="radio-label">Urban Farmer</label>
+                        </div>
+                      </div>
+
+                    </div>
+                    <!-- <div class="desc">
                       <div class="radio-field-btn">
                         <div class="radioBtnBox">
                           <input id="rural" name="selectedArea" type="radio" checked />
@@ -149,20 +172,20 @@
                           <label for="urban" class="radio-label">Urban Farmer</label>
                         </div>
                       </div>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
 
                 <!-- Address -->
-                <div class="row my-5">
-                  <div class="col-lg-2">
+                <div class="row my-5 mob_mr">
+                  <div class="col-lg-2 fieldName">
                     <div class="points"><span class="serial">2.</span> Address: </div>
                   </div>
-                  <div class="col-lg-10">
+                  <div class="col-lg-10 col-md-12 col-sm-12 fieldName">
                     <div class="desc">
 
                       <div class="row">
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
                           <p class="m-1">District</p>
                           <div class="selectCover">
                             <select class="address">
@@ -172,7 +195,7 @@
                             </select>
                           </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
                           <p class="m-1">Sub-District</p>
                           <div class="selectCover">
                             <select class="address">
@@ -183,7 +206,7 @@
                           </div>
 
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
                           <p class="m-1">Block</p>
                           <div class="selectCover">
                             <select class="address">
@@ -194,7 +217,7 @@
                           </div>
 
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
                           <p class="m-1">Village/Town</p>
                           <div class="selectCover">
                             <select class="address">
@@ -213,22 +236,24 @@
                 </div>
 
                 <!-- Farmer Name -->
-                <div class="row my-5">
-                  <div class="col-lg-2">
+                <div class="row my-5 mob_mr">
+                  <div class="col-lg-2 fieldName">
                     <div class="points"><span class="serial">3.</span> Farmer Name: </div>
                   </div>
-                  <div class="col-lg-10">
+                  <div class="col-lg-10 col-md-12 col-sm-12 fieldName">
                     <div class="desc">
 
                       <div class="row">
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-4 col-sm-4 mb-3">
+                          <p class="m-1">First Name</p>
                           <input type="text" class="form-control" placeholder="First Name">
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-4 col-sm-4 mb-3">
+                          <p class="m-1">Last Name</p>
                           <input type="text" class="form-control" placeholder="Last Name">
-
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-md-4 col-sm-4 mb-3">
+                          <p class="m-1">Father/Mother/Husband Name</p>
                           <input type="text" class="form-control" placeholder="Father/Mother/Husband Name">
 
                         </div>
@@ -240,16 +265,16 @@
                 </div>
 
                 <!-- Gender -->
-                <div class="row my-5">
-                  <div class="col-lg-2">
+                <div class="row my-5 mob_mr">
+                  <div class="col-lg-2 fieldName">
                     <div class="points"><span class="serial">4.</span> Gender: </div>
                   </div>
-                  <div class="col-lg-10">
+                  <div class="col-lg-10 col-md-12 col-sm-12 fieldName">
                     <div class="desc">
 
                       <div class="row">
                         <div class="col-lg-3">
-                          <!-- <p class="m-1">Gender</p> -->
+                          <p class="m-1">Gender</p>
                           <div class="selectCover">
                             <select class="address">
                               <option value="dist">--Please Select--</option>
@@ -266,16 +291,16 @@
                 </div>
 
                 <!-- Category -->
-                <div class="row my-5">
-                  <div class="col-lg-2">
+                <div class="row my-5 mob_mr">
+                  <div class="col-lg-2 fieldName">
                     <div class="points"><span class="serial">5.</span> Category: </div>
                   </div>
-                  <div class="col-lg-10">
+                  <div class="col-lg-10 col-md-12 col-sm-12 fieldName">
                     <div class="desc">
 
                       <div class="row">
                         <div class="col-lg-3">
-                          <!-- <p class="m-1">Category</p> -->
+                          <p class="m-1">Category</p>
                           <div class="selectCover">
                             <select class="address">
                               <option value="dist">--Please Select--</option>
@@ -290,7 +315,6 @@
                     </div>
                   </div>
                 </div>
-
 
               </div>
 
@@ -313,12 +337,13 @@
     </div>
 
     <!-- Farmer's Land Details Panel -->
-    <div id="pane-B" class="card collapse tab-pane  animate__animated animate__slideInRight" role="tabpanel" data-parent="#tab-content-wrapper" 
-    aria-labelledby="tab-B">
+    <div id="pane-B" class="card collapse tab-pane  animate__animated animate__slideInRight" role="tabpanel"
+      data-parent="#tab-content-wrapper" aria-labelledby="tab-B">
 
-      <div  class="card-header collapsed" data-toggle="collapse" data-target="#collapse-B" aria-expanded="false" aria-controls="collapse-B"role="tab" id="heading-B">
+      <div class="card-header collapsed" data-toggle="collapse" data-target="#collapse-B" aria-expanded="false"
+        aria-controls="collapse-B" role="tab" id="heading-B">
         <h5 class="mb-0">
-            Farmer's Land Details
+          Farmer's Land Details
         </h5>
       </div>
 
@@ -327,12 +352,15 @@
 
           <!-- Heading -->
           <div class="panel_heading text-center">
-            Farmer's Land Details
+            <span>
+              Farmer's Land Details
+            </span>
+            
           </div>
 
 
           <!-- Body -->
-          <div class="panelBody mt-5 animate__animated animate__fadeIn animate__delay-1s">
+          <div class="panelBody mt-2 animate__animated animate__fadeIn animate__delay-1s">
 
             <div class="pointDescWrap">
 
@@ -356,14 +384,15 @@
 
                   <!-- Ownership of land -->
 
-                  <div class="row my-5">
-                    <div class="col-lg-2">
-                      <div class="points"><span class="serial">1.</span> Ownership of land: </div>
-                    </div>
-                    <div class="col-lg-10">
-                      <div class="desc">
-                        <div class="row">
-                          <div class="col-lg-3">
+                  <div class="row my-5 mob_mr">
+                    <div class="col-lg-12">
+                      <div class="row">
+                        <div class="col-lg-2 col-md-6 col-sm-6 Ownership">
+                          <div class="points"><span class="serial">1.</span> Ownership of land: </div>
+                        </div>
+                  
+                        <div class="col-lg-3 col-md-6 col-sm-6 Ownership">
+                          <div class="desc">
                             <div class="selectCover">
                               <select class="address">
                                 <option value="dist">--Select ownership of land--</option>
@@ -375,22 +404,23 @@
                         </div>
                       </div>
                     </div>
+                  
                   </div>
 
                   <!-- Land Holding Type -->
-                  <div class="row my-5">
+                  <div class="row my-5 mob_mr">
                     <div class="container shadowed">
                       <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-md-6 mb-3">
                           <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-12 col-sm-12 landHolding">
                               <div class="points"><span class="serial">2.</span> Land Holding Type: </div>
                             </div>
 
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-12 col-sm-12 landHolding">
                               <div class="desc">
                                 <div class="row">
-                                  <div class="col-lg-10">
+                                  <div class="col-lg-12">
                                     <div class="selectCover">
                                       <select class="address">
                                         <option value="dist">--Select Land Holding Type--</option>
@@ -405,16 +435,16 @@
                           </div>
                         </div>
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-md-6">
                           <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-12 col-sm-12 landHolding">
                               <div class="points"> If, joint % of share: </div>
                             </div>
 
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-12 col-sm-12 landHolding">
                               <div class="desc">
                                 <div class="row">
-                                  <div class="col-lg-10">
+                                  <div class="col-lg-12">
                                     <input type="text" class="form-control" placeholder="percentage">
                                   </div>
                                 </div>
@@ -429,15 +459,18 @@
                   </div>
 
                   <!-- Land Holding (In Acre) -->
-                  <div class="row my-5">
-                    <div class="col-lg-2">
-                      <div class="points"><span class="serial">3.</span> <span style="display: block;">Land Holding
-                        </span> (In Acre): </div>
+                  <div class="row my-5 mob_mr">
+                    <div class="col-lg-2 col-md-6 col-sm-6 Ownership">
+                      <div class="points"><span class="serial">3.</span>
+                        <span style="display: flex; flex-direction:column">Land Holding: <small>(In Acre)</small>
+                        </span>
+                      </div>
                     </div>
-                    <div class="col-lg-10">
+
+                    <div class="col-lg-2 col-md-6 col-sm-6 Ownership">
                       <div class="desc">
                         <div class="row">
-                          <div class="col-lg-3">
+                          <div class="col-12">
                             <div class="selectCover">
                               <select class="address">
                                 <option value="dist">--Select Farmer Type--</option>
@@ -491,19 +524,19 @@
                   </div>
 
                   <!-- Land Record Number -->
-                  <div class="row my-5">
+                  <div class="row my-5 mob_mr">
                     <div class="container">
                       <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-md-6 mb-3">
                           <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-12 col-sm-12 landHolding">
                               <div class="points"><span class="serial">5.</span> Land Record Number: </div>
                             </div>
 
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-12 col-sm-12 landHolding">
                               <div class="desc">
                                 <div class="row">
-                                  <div class="col-lg-10">
+                                  <div class="col-lg-12">
                                     <div class="selectCover">
                                       <select class="address">
                                         <option value="dist">--Select Type of Land Record--</option>
@@ -518,21 +551,22 @@
                           </div>
                         </div>
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-md-6 mb-3">
                           <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-12 col-sm-12 landHolding">
                               <div class="points"><span class="serial">6.</span> Land Record No. </div>
                             </div>
 
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-12 col-sm-12 landHolding">
                               <div class="desc">
                                 <div class="row">
-                                  <div class="col-lg-10">
+                                  <div class="col-lg-12">
                                     <input type="text" class="form-control" placeholder="land record number">
                                   </div>
                                 </div>
                               </div>
                             </div>
+
                           </div>
                         </div>
 
@@ -541,19 +575,19 @@
                   </div>
 
                   <!-- Upload supporting document -->
-                  <div class="row my-5">
+                  <div class="row my-5 mob_mr">
                     <div class="container">
                       <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-md-6 mb-3">
                           <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-12 col-sm-12 landHolding">
                               <div class="points"><span class="serial">7.</span> Upload supporting document: </div>
                             </div>
 
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-12 col-sm-12 landHolding">
                               <div class="desc">
                                 <div class="row">
-                                  <div class="col-lg-10">
+                                  <div class="col-lg-12">
                                     <div class="selectCover">
                                       <select class="address">
                                         <option value="dist">--Select Type of document--</option>
@@ -568,9 +602,9 @@
                           </div>
                         </div>
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-md-6 mb-3">
                           <div class="row">
-                            <div class="col-lg-4 position-relative">
+                            <div class="col-lg-4 col-md-12 col-sm-12 landHolding position-relative">
                               <div class="points instruct">Click for Instructions </div>
                               <div class="detailed_Instruct position-absolute">
                                 <ol>
@@ -580,7 +614,8 @@
                                 </ol>
                               </div>
                             </div>
-                            <div class="col-lg-4">
+
+                            <div class="col-lg-6 col-md-12 col-sm-12 landHolding">
                               <div class="desc">
                                 <div class="row">
                                   <div class="col-lg-10">
@@ -599,15 +634,15 @@
                   </div>
 
                   <!-- Cultivable land Address -->
-                  <div class="row my-5">
-                    <div class="col-lg-2">
+                  <div class="row mt-5 mob_mr">
+                    <div class="col-lg-2 fieldName1">
                       <div class="points"><span class="serial">8.</span> Cultivable land Address: </div>
                     </div>
-                    <div class="col-lg-10">
+                    <div class="col-lg-10 col-md-12 col-sm-12 fieldName1">
                       <div class="desc">
 
                         <div class="row">
-                          <div class="col-lg-3">
+                          <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
                             <p class="m-1">District</p>
                             <div class="selectCover">
                               <select class="address">
@@ -617,7 +652,7 @@
                               </select>
                             </div>
                           </div>
-                          <div class="col-lg-3">
+                          <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
                             <p class="m-1">Sub-District</p>
                             <div class="selectCover">
                               <select class="address">
@@ -628,7 +663,7 @@
                             </div>
 
                           </div>
-                          <div class="col-lg-3">
+                          <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
                             <p class="m-1">Block</p>
                             <div class="selectCover">
                               <select class="address">
@@ -639,7 +674,7 @@
                             </div>
 
                           </div>
-                          <div class="col-lg-3">
+                          <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
                             <p class="m-1">Village/Town</p>
                             <div class="selectCover">
                               <select class="address">
@@ -679,11 +714,12 @@
     </div>
 
     <!-- Farmer's Bank Account Details Panel -->
-    <div id="pane-C" class="card collapse tab-pane  animate__animated animate__slideInRight" role="tabpanel" data-parent="#tab-content-wrapper" 
-    aria-labelledby="tab-C">
-      <div class="card-header collapsed" data-toggle="collapse"  data-target="#collapse-C" aria-expanded="false" aria-controls="collapse-C" role="tab" id="heading-C">
+    <div id="pane-C" class="card collapse tab-pane  animate__animated animate__slideInRight" role="tabpanel"
+      data-parent="#tab-content-wrapper" aria-labelledby="tab-C">
+      <div class="card-header collapsed" data-toggle="collapse" data-target="#collapse-C" aria-expanded="false"
+        aria-controls="collapse-C" role="tab" id="heading-C">
         <h5 class="mb-0">
-            Farmer's Bank Account Details
+          Farmer's Bank Account Details
         </h5>
       </div>
       <div id="collapse-C" class="collapse" role="tabpanel" aria-labelledby="heading-C">
@@ -691,7 +727,10 @@
 
           <!-- Heading -->
           <div class="panel_heading text-center">
-            Farmer's Bank Account Details
+            <span>
+              Farmer's Bank Account Details
+            </span>
+            
           </div>
 
           <!-- Body -->
@@ -701,7 +740,7 @@
               <div class="container">
 
                 <!-- Aadhar linked bank name -->
-                <div class="row my-5">
+                <div class="row my-5 mob_mr">
                   <div class="col-lg-3">
                     <div class="points"><span class="serial">1.</span> Bank Name (Aadhar linked): </div>
                   </div>
@@ -724,7 +763,7 @@
                 </div>
 
                 <!-- Account holder name -->
-                <div class="row my-5">
+                <div class="row my-5 mob_mr">
                   <div class="col-lg-3">
                     <div class="points"><span class="serial">2.</span> Account holder name: </div>
                   </div>
@@ -740,7 +779,7 @@
                 </div>
 
                 <!-- Account number -->
-                <div class="row my-5">
+                <div class="row my-5 mob_mr">
                   <div class="col-lg-3">
                     <div class="points"><span class="serial">3.</span> Account number: </div>
                   </div>
@@ -756,7 +795,7 @@
                 </div>
 
                 <!-- IFSC Code -->
-                <div class="row my-5">
+                <div class="row my-5 mob_mr">
                   <div class="col-lg-3">
                     <div class="points"><span class="serial">4.</span> IFSC Code: </div>
                   </div>
@@ -772,7 +811,7 @@
                 </div>
 
                 <!-- Type of bank account -->
-                <div class="row my-5">
+                <div class="row my-5 mob_mr">
                   <div class="col-lg-3">
                     <div class="points"><span class="serial">5.</span> Type of bank account: </div>
                   </div>
@@ -811,11 +850,12 @@
     </div>
 
     <!--  Self-Declaration Panel -->
-    <div id="pane-D" class="card collapse tab-pane  animate__animated animate__slideInRight" role="tabpanel" data-parent="#tab-content-wrapper" 
-    aria-labelledby="tab-D">
-      <div  class="card-header collapsed" data-toggle="collapse" data-target="#collapse-D" aria-expanded="false" aria-controls="collapse-D" role="tab" id="heading-D">
+    <div id="pane-D" class="card collapse tab-pane  animate__animated animate__slideInRight" role="tabpanel"
+      data-parent="#tab-content-wrapper" aria-labelledby="tab-D">
+      <div class="card-header collapsed" data-toggle="collapse" data-target="#collapse-D" aria-expanded="false"
+        aria-controls="collapse-D" role="tab" id="heading-D">
         <h5 class="mb-0">
-            Self-Declaration
+          Self-Declaration
         </h5>
       </div>
       <div id="collapse-D" class="collapse" role="tabpanel" aria-labelledby="heading-D">
@@ -823,17 +863,20 @@
 
           <!-- Heading -->
           <div class="panel_heading text-center">
-            Self-Declaration
+            <span>
+              Self-Declaration
+            </span>
+            
           </div>
 
           <!-- Body -->
-          <div class="panelBody mt-5 animate__animated animate__fadeIn animate__delay-1s">
+          <div class="panelBody animate__animated animate__fadeIn animate__delay-1s">
 
             <div class="pointDescWrap">
               <div class="container">
 
                 <!-- Self-Declaration -->
-                <div class="row my-5">
+                <div class="row my-3">
                   <div class="col-lg-12">
                     I, Shri/Smt ......................... declare that I give my consent and agree that DoF responsible
                     for
@@ -871,11 +914,6 @@
 </div>
 
 
-<!-- Preview modal -->
-<!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#preview">
-  Launch demo modal
-</button> -->
 
 <!-- Modal -->
 <div class="modal fade" id="preview" tabindex="-1" role="dialog" aria-labelledby="previewTitle" aria-hidden="true"
@@ -904,7 +942,8 @@
 
                 <!-- Heading -->
                 <div class="panel_heading text-center">
-                  Farmer’s Personal Details
+                  <span>Farmer’s Personal Details</span>
+                  
                 </div>
 
                 <!-- Body -->
@@ -945,51 +984,27 @@
                             <div class="row">
                               <div class="col-lg-3">
                                 <p class="m-1">District</p>
-                                <!-- <div class="selectCover">
-                                    <select class="address">
-                                      <option value="dist">--Please Select--</option>
-                                      <option value="AL">Alabama</option>
-                                      <option value="WY">Wyoming</option>
-                                    </select>
-                                  </div> -->
+                                
                                 <input type="text" class="form-control" placeholder="District" disabled>
 
                               </div>
                               <div class="col-lg-3">
                                 <p class="m-1">Sub-District</p>
-                                <!-- <div class="selectCover">
-                                    <select class="address">
-                                      <option value="Sub-Dist">--Please Select--</option>
-                                      <option value="AL">Alabama</option>
-                                      <option value="WY">Wyoming</option>
-                                    </select>
-                                  </div> -->
+                                
                                 <input type="text" class="form-control" placeholder="Sub-District" disabled>
 
 
                               </div>
                               <div class="col-lg-3">
                                 <p class="m-1">Block</p>
-                                <!-- <div class="selectCover">
-                                    <select class="address">
-                                      <option value="Block">--Please Select--</option>
-                                      <option value="AL">Alabama</option>
-                                      <option value="WY">Wyoming</option>
-                                    </select>
-                                  </div> -->
+                               
                                 <input type="text" class="form-control" placeholder="Block" disabled>
 
 
                               </div>
                               <div class="col-lg-3">
                                 <p class="m-1">Village/Town</p>
-                                <!-- <div class="selectCover">
-                                    <select class="address">
-                                      <option value="Vill">--Please Select--</option>
-                                      <option value="AL">Alabama</option>
-                                      <option value="WY">Wyoming</option>
-                                    </select>
-                                  </div> -->
+                                
                                 <input type="text" class="form-control" placeholder="Village/Town" disabled>
 
 
@@ -1039,15 +1054,7 @@
 
                             <div class="row">
                               <div class="col-lg-3">
-                                <!-- <p class="m-1">Gender</p> -->
-                                <!-- <div class="selectCover">
-                                    <select class="address">
-                                      <option value="dist">--Please Select--</option>
-                                      <option value="AL">Male</option>
-                                      <option value="WY">Female</option>
-                                      <option value="WY">Others</option>
-                                    </select>
-                                  </div> -->
+                              
                                 <input type="text" class="form-control" placeholder="Gender" disabled>
 
                               </div>
@@ -1067,14 +1074,7 @@
 
                             <div class="row">
                               <div class="col-lg-3">
-                                <!-- <p class="m-1">Category</p> -->
-                                <!-- <div class="selectCover">
-                                    <select class="address">
-                                      <option value="dist">--Please Select--</option>
-                                      <option value="AL">Alabama</option>
-                                      <option value="WY">Wyoming</option>
-                                    </select>
-                                  </div> -->
+                                
                                 <input type="text" class="form-control" placeholder="Category" disabled>
 
                               </div>
@@ -1087,15 +1087,6 @@
 
 
                     </div>
-
-                    <!-- <div class="container">
-                        <div class="row">
-                          <div class="col-lg-4">
-                            <div class="btn btn-primary">Next</div>
-                          </div>
-                        </div>
-                      </div> -->
-
 
                   </div>
 
@@ -1117,7 +1108,7 @@
 
                   <!-- Heading -->
                   <div class="panel_heading text-center">
-                    Farmer's Land Details
+                    <span>Farmer's Land Details</span>
                   </div>
 
 
@@ -1137,13 +1128,7 @@
                             <div class="desc">
                               <div class="row">
                                 <div class="col-lg-3">
-                                  <!-- <div class="selectCover">
-                                        <select class="address">
-                                          <option value="dist">--Select ownership of land--</option>
-                                          <option value="AL">Alabama</option>
-                                          <option value="WY">Wyoming</option>
-                                        </select>
-                                      </div> -->
+
                                   <input type="text" class="form-control" placeholder="Ownership of land" disabled>
 
                                 </div>
@@ -1165,14 +1150,8 @@
                                   <div class="col-lg-6">
                                     <div class="desc">
                                       <div class="row">
-                                        <div class="col-lg-10">
-                                          <!-- <div class="selectCover">
-                                            <select class="address">
-                                              <option value="dist">--Select Land Holding Type--</option>
-                                              <option value="AL">Alabama</option>
-                                              <option value="WY">Wyoming</option>
-                                            </select>
-                                          </div> -->
+                                        <div class="col-lg-10"> 
+
                                           <input type="text" class="form-control" placeholder="Land Holding Type"
                                             disabled>
 
@@ -1471,7 +1450,8 @@
 
                   <!-- Heading -->
                   <div class="panel_heading text-center">
-                    Farmer's Bank Account Details
+                    <span> Farmer's Bank Account Details</span>
+                   
                   </div>
 
                   <!-- Body -->
@@ -1606,7 +1586,8 @@
 
                   <!-- Heading -->
                   <div class="panel_heading text-center">
-                    Self-Declaration
+                    <span>Self-Declaration</span>
+                    
                   </div>
 
                   <!-- Body -->
